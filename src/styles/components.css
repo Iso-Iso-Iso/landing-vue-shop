@@ -1,0 +1,16 @@
+.header-menu-link-thin {
+    color: #474b5d;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.header-menu-link {
+    font-weight: 600;
+    font-size: 18px;
+    color: #111827;
+    cursor: pointer;
+}
+.footer-menu-link {
+    color: white;
+    font-size: 18px;
+}

@@ -1,32 +1,28 @@
-<template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view />
-  </div>
+<script>
+import PrimaryButton from "@/components/forms/primary-button.vue";
+import MainHeader from "@/layouts/main-header.vue";
+import MainFooter from "@/layouts/main-footer.vue";
+export default {
+    components: {
+        PrimaryButton,
+        MainHeader,
+        MainFooter,
+    },
+};
+</script>
+<template lang="pug">
+div(class="flex flex-col justify-stretch items-stretch min-h-full")
+  MainHeader
+  div(class='flex-grow flex-shrink flex-full')
+  MainFooter
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body,
+html {
+    height: 100%;
 }
 </style>

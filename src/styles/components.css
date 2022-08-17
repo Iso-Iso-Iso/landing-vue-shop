@@ -14,3 +14,12 @@
     color: white;
     font-size: 18px;
 }
+.product-list-item {
+    @apply text-gray-900 relative;
+    font-size: 14px;
+    padding-left: 20px;
+}
+.product-list-item::before {
+    content: "";
+    @apply rounded-full absolute top-1/2 left-[10px] transform -translate-x-1/2 -translate-y-1/2 w-[3px] h-[3px] bg-gray-900;
+}

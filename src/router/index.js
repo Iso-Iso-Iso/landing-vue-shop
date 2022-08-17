@@ -1,13 +1,13 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import ProductCategories from "@/views/product/product-categories.vue";
+import HomePage from "@/views/home-page.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
     {
-        path: "/product/category",
-        component: ProductCategories,
+        path: "/",
+        component: HomePage,
     },
 ];
 

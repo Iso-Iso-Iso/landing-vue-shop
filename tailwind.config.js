@@ -23,6 +23,7 @@ module.exports = {
             yellow: colors.amber,
             blue: colors.blue,
             primary: {
+                light: "#D1D6F4",
                 dark: "#021BC2",
                 DEFAULT: "#162ECE",
             },

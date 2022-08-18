@@ -23,3 +23,8 @@
     content: "";
     @apply rounded-full absolute top-1/2 left-[10px] transform -translate-x-1/2 -translate-y-1/2 w-[3px] h-[3px] bg-gray-900;
 }
+
+.title {
+    @apply font-bold text-gray-900;
+    font-size: 26px;
+}

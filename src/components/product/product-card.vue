@@ -7,7 +7,7 @@ export default {
 };
 </script>
 <template lang="pug">
-div(class="bg-primary-light flex") 
+div(class="bg-primary-light flex w-[340px]") 
     div(class="reletive w-[150px] h-[160px] mr-5") 
         img(:src="src" class="abolute top-0 left-0 object-contain h-full w-full")
     div(class="flex flex-col justify-start items-stretch py-2 pr-2")

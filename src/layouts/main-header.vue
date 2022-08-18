@@ -20,13 +20,14 @@ export default {
     methods: {
         toggleBurger() {
             this.isBurgerActive = !this.isBurgerActive;
+            document.body.classList.toggle("overflow-hidden");
         },
     },
 };
 </script>
 
 <template lang="pug">
-header
+header(class=" ")
   div(class="h-20  shadow-under ")
     div(class='w-full h-2 bg-primary mb-1')
     div(class='px-4 flex justify-between items-center')

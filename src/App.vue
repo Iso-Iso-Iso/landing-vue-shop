@@ -18,7 +18,7 @@ export default {
 </script>
 <template lang="pug">
 div(class="flex flex-col justify-stretch items-stretch min-h-full")
-  ProductCard(:src='ProductPlaceholder')
+  //- ProductCard(:src='ProductPlaceholder')
     template(#title) title
     template
       p(class="product-list-item") Текст

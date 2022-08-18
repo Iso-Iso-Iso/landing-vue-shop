@@ -6,7 +6,7 @@ export default {
 };
 </script>
 <template lang="pug">
-div
+div(class="")
     div(class="flex items-center justify-between font-semibold text-2xl leading-9 text-primary mb-5")
       img(src="@/assets/phone-icon.svg" class='w-[22px] h-[22px]')
       p(class="") +7 (495) 740 00 77

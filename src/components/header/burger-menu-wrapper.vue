@@ -4,7 +4,7 @@ export default {
 };
 </script>
 <template lang="pug">
-div(class="absolute -left-full top-0 bg-white z-50 w-[100vw] min-h-[100vh] px-14 py-16" :class="{'-left-0':isBurgerActive}")
+div(v-if="isBurgerActive" class="fixed bottom-0 overflow-y-auto left-0 top-0 bg-white z-50 w-full min-h-[100vh]  px-14 py-16 " )
     slot
         
 </template>

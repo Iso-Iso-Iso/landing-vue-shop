@@ -28,6 +28,10 @@ module.exports = {
                 DEFAULT: "#162ECE",
             },
             footer: "#474B5D",
+            success: {
+                DEFAULT: "#2ECC71",
+                dark: "#22BC64",
+            },
         },
     },
     variants: {

@@ -1,5 +1,5 @@
 <script>
-import ProductCategories from "@/layouts/product-categories.vue";
+import ProductCategories from "@/layouts/product/product-categories.vue";
 
 export default {
     components: { ProductCategories },

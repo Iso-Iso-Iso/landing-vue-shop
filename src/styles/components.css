@@ -28,3 +28,8 @@
     @apply font-bold text-gray-900;
     font-size: 26px;
 }
+
+.section-title {
+    @apply font-semibold text-gray-900;
+    font-size: 17px;
+}

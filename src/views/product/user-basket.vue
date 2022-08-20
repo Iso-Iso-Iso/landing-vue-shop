@@ -1,22 +1,27 @@
 <script>
-import BasketItem from "@/components/basket/basket-item.vue";
-import BasketIcon from "@/assets/basket/thumbnail.png";
-import DashSploiler from "@/components/forms/dash-sploiler.vue";
 import PrimaryButton from "@/components/forms/primary-button.vue";
+import UserOrders from "@/layouts/basket/user-orders.vue";
+import ReceiveType from "@/layouts/basket/receive-type.vue";
+import CheckoutMethod from "@/layouts/basket/checkout-method.vue";
+import AdditionInfo from "@/layouts/basket/addition-info.vue";
+import CheckoutConclusion from "@/layouts/basket/checkout-conclusion.vue";
 export default {
-    components: { BasketItem, DashSploiler, PrimaryButton },
-    data() {
-        return {
-            BasketIcon,
-        };
+    components: {
+        PrimaryButton,
+        UserOrders,
+        ReceiveType,
+        CheckoutMethod,
+        AdditionInfo,
+        CheckoutConclusion,
     },
 };
 </script>
 <template lang="pug">
-div
-    h2(class="title") Заголовок
-    BasketItem(:src="BasketIcon" weight="1.2" date="1 февраль" quantity="4" ) Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam quod, suscipit ducimus eius ea debitis amet inventore aliquid blanditiis consectetur culpa, molestias nihil temporibus a reprehenderit corporis repellat expedita? Praesentium!
-    DashSploiler Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat a possimus officiis, facere impedit perspiciatis, maiores ab obcaecati officia, fugiat ullam nesciunt hic eveniet consequuntur molestiae animi error doloremque asperiores.
-        template(#title) title
+div(class="bg-gray-200")
+    UserOrders
+    ReceiveType
+    CheckoutMethod
+    AdditionInfo
+    CheckoutConclusion(date='7 февраля' price='300' quantity="3 ")
     PrimaryButton(:success='true')
 </template>

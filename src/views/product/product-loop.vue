@@ -1,5 +1,5 @@
 <script>
-import ProductLoop from "@/layouts/product-loop.vue";
+import ProductLoop from "@/layouts/product/product-loop.vue";
 export default {
     components: {
         ProductLoop,
@@ -7,6 +7,7 @@ export default {
 };
 </script>
 <template lang="pug">
-ProductLoop
+div
+    ProductLoop
 
 </template>

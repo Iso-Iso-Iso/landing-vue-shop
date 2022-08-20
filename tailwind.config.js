@@ -7,6 +7,7 @@ module.exports = {
     theme: {
         flex: {
             full: "1 1 100%",
+            auto: "1 1 auto",
         },
         extend: {
             boxShadow: {

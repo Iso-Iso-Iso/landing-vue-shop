@@ -31,17 +31,17 @@ div(class="bg-white p-3")
         CustomSelcet
     h3(class="section-title mb-2") Формат
     ThinSelectWrapper(class="mb-5")
-        ThinSelectOption(:selected="true") 420х297мм (А3)
-        ThinSelectOption() 420х297мм (А3)
-        ThinSelectOption() 297х210мм (А4)
-        ThinSelectOption() 297х210мм (А4)
-        ThinSelectOption() 210х148мм (А4)
-        ThinSelectOption() 210х148мм (А4)
-        ThinSelectOption(class="w-[100%]") Другой формат
+        ThinSelectOption(:selected="true" class="flex-grow") 420х297мм (А3)
+        ThinSelectOption(class="flex-grow") 420х297мм (А3)
+        ThinSelectOption(class="flex-grow") 297х210мм (А4)
+        ThinSelectOption(class="flex-grow") 297х210мм (А4)
+        ThinSelectOption(class="flex-grow") 210х148мм (А4)
+        ThinSelectOption(class="flex-grow") 210х148мм (А4)
+        ThinSelectOption(class="flex-grow") Другой формат
     h3(class="section-title mb-2") Стороны печати
     ThinSelectWrapper(class="mb-5")
-       ThinSelectOption(:selected="true") Одна
-       ThinSelectOption() Две
+       ThinSelectOption(:selected="true" class="flex-grow") Одна
+       ThinSelectOption(class="flex-grow") Две
     h3(class="section-title mb-2") Количество видов
     CustomInput(class="mb-7")
     CustomCheckbox(class="mb-6" v-model="a")

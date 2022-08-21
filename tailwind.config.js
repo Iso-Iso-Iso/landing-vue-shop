@@ -8,6 +8,7 @@ module.exports = {
         flex: {
             full: "1 1 100%",
             auto: "1 1 auto",
+            "1/2": "1 1 50%",
         },
         extend: {
             boxShadow: {
@@ -33,6 +34,9 @@ module.exports = {
                 DEFAULT: "#2ECC71",
                 dark: "#22BC64",
             },
+        },
+        screens: {
+            320: { max: "320px" },
         },
     },
     variants: {

@@ -28,5 +28,7 @@ div(class="bg-gray-200")
         span(class="font-bold") 6 февраля.
         |  Срок доставки будет рассчитан при оформлении заказа.
     p(class="mb-4 text-2xl text-gray-900 font-bold") Итого: 9 666₽
-    PrimaryButton(:success='true') Добавить в корзину
+    PrimaryButton(:success='true' class="flex items-center") 
+        img(src="@/assets/calculator/basket-card.svg" class="mr-1")
+        | Добавить в корзину
 </template>

@@ -4,6 +4,7 @@ import ThinSelectOption from "@/components/forms/thin-select-option.vue";
 import CustomSelcet from "@/components/forms/custom-selcet.vue";
 import CustomInput from "@/components/forms/custom-input.vue";
 import CustomCheckbox from "@/components/forms/custom-checkbox.vue";
+import QuestionIcon from "@/components/calculator/question-icon.vue";
 export default {
     components: {
         ThinSelectWrapper,
@@ -11,6 +12,7 @@ export default {
         CustomSelcet,
         CustomInput,
         CustomCheckbox,
+        QuestionIcon,
     },
     data() {
         return {
@@ -42,12 +44,26 @@ div(class="bg-white p-3")
        ThinSelectOption() Две
     h3(class="section-title mb-2") Количество видов
     CustomInput(class="mb-7")
-    CustomCheckbox(class="mb-6" v-model="a") Ламинация +1 361₽  
-    CustomCheckbox(class="mb-6" ) Сверление +428₽ 
-    CustomCheckbox(class="mb-6" ) Скругление углов +61₽  
-    CustomCheckbox(class="mb-6" ) Перфорация +604₽
-    CustomCheckbox(class="mb-6" ) Нумерация +1 500₽  
-    CustomCheckbox(class="mb-6" ) Биговка +505₽  
-    CustomCheckbox() Фальцовка  +320₽  
+    CustomCheckbox(class="mb-6" v-model="a")
+        p(class="flex items-center") Ламинация +1  361₽  
+            QuestionIcon(class="ml-2")
+    CustomCheckbox(class="mb-6" )
+        p(class="flex items-center") Сверление +428₽  
+            QuestionIcon(class="ml-2")
+    CustomCheckbox(class="mb-6" )
+        p(class="flex items-center") Скругление углов  +61₽  
+            QuestionIcon(class="ml-2")
+    CustomCheckbox(class="mb-6" )
+        p(class="flex items-center") Перфорация +604₽ 
+            QuestionIcon(class="ml-2")
+    CustomCheckbox(class="mb-6" )
+        p(class="flex items-center") Нумерация +1  500₽  
+            QuestionIcon(class="ml-2")
+    CustomCheckbox(class="mb-6" )
+        p(class="flex items-center") Биговка +505₽   
+            QuestionIcon(class="ml-2")
+    CustomCheckbox()
+        p(class="flex items-center") Фальцовка  +320₽   
+            QuestionIcon(class="ml-2")
 
 </template>

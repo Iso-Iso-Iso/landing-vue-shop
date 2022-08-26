@@ -4,6 +4,6 @@ export default {
 };
 </script>
 <template lang="pug">
-div(class="rounded-sm  px-[30px] py-[34px] transition-all text-lg" :class="[selected?'bg-primary text-white':'text-gray-900 bg-white']")
+div(class="rounded-sm  cursor-pointer px-[30px] py-[34px] transition-all text-lg" :class="[selected?'bg-primary text-white':'text-gray-900 bg-white']")
     slot 
 </template>
